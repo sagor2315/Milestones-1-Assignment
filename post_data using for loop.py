@@ -36,22 +36,7 @@ post_data = [
         "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     }, ]
 
-# post_data[0].update({'slug':'sunt aut facere repellat provident'})
-# post_data[1].update({'slug':'qui est esse'})
-# post_data[2].update({'slug':'ea molestias quasi exercitationem'})
-# post_data[3].update({'slug':'eum et est occaecati'})
-# post_data[4].update({'slug':'nesciunt quas odio'})
-# post_data[5].update({'slug':'dolorem eum magni eos aperiam quia'})
-
-# i = 0
-# while i < len(post_data):
-#     slug = post_data[i].get('title').strip().replace(' ','-').lower()
-#     final_post = post_data[i].update({'slug':slug})
-#     i += 1
-
 for post in post_data:
-    slug = post.get('title').strip().replace(' ','-').lower()
-    final_post = post.update({'slug':slug})
-
-print(post_data[3])
-
+    slug = post.get('title').strip().replace(' ', '-').lower()
+    final_update = post.update({'slug':slug})
+print(post_data[1])
